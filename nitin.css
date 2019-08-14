@@ -1,0 +1,188 @@
+@font-face{
+    font-family: 'Aclonica';
+    src: url(Aclonica.ttf);
+    
+}
+
+body{
+    background-image: url("3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.font{
+    font-family: 'Aclonica';
+}                           
+
+.hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+.dots{
+    height: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container{
+	width: 450px;
+    display: inline-block;
+    position: relative;
+    border: white 10px double;
+}
+
+.heading1{
+    font-size: 55px;
+    font-style: normal;
+}
+
+.heading2{
+    font-size: 25px;
+    font-style: normal;
+}
+
+.andharban, .kalsubai, .yelagiri{
+    margin-left: 150px;
+    width: 450px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.andharban, .yelagiri{
+    margin-right: 15vw;
+}
+
+.abc{
+	width: 450;
+}
+#main{
+    font-size: 25px;
+    font-style: oblique;
+    color: white;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 47vw;
+    text-align: center;
+    padding-top: 15vw;
+    position: absolute;
+}
+
+#p1{
+    font-family: 'Aclonica';
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(andharban.jpg);
+    background-size: cover;
+    width: 100%;
+    padding-top: 40px;
+    height: 650px;
+    color: white;
+}
+
+.index1{
+    height: 5px;
+    background-color: black;
+    margin-top: 47vw;
+    color: white;
+}
+
+#p2, #p3{
+    font-family: 'Aclonica';
+    background-size: cover;
+    width: 100%;
+    height: 850px;
+    padding-top: 40px;
+    color: white;
+    display: inline-block;
+}
+
+#p2{
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(kalsubai.jpg);
+    background-size: cover;
+        
+}
+
+#p3{
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(yelagiri.jpg);
+    background-size: cover;
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+.footer{
+    display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #111;
+  width: 100%;
+  color: white;
+  height: max-content;
+  position: absolute;
+  font-size: 70%;
+  padding:20px;
+  padding-left: 100px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+#inline-block2{
+  display: inline-block;
+  margin-right: 210px;
+}
+
+#inline-block3{
+  display: inline-block;
+}
+
+#feedback{
+  width: 30vw;
+  height: 35px;
+}
+
+#feedbacksubmit{
+  height: 35px;
+}
+
+.animate {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(15%, 0, 0);
+    transform: translate3d(-15%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(15%, 0, 0);
+    transform: translate3d(-15%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+

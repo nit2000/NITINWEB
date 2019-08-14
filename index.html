@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="nitin.css" type="text/css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="resume.js"></script>
+    <title>Nitin</title>
+</head>
+
+<body onscroll="myfunction()">
+    <div id="main">
+        <p>
+            <h1 class="font heading1">Nitin Vankadari</h1>
+            <hr class="hr">
+            <h3 class="font heading2">My Trekking Profile</h3>
+        </p>
+    </div>
+    <div class="index1"></div>
+    <div id="p1">
+        <div class="andharban animate" id="andharban">
+            <h3 class="heading1 font">Andharban</h3>
+            Andharban (or Dark Forest) is a dense forest located near Pimpri in Maharashtra, an hour and a half away
+            from
+            Lonavala. Andharban trek is an ideal monsoon trek, shaded for the most part, and its speciality is that it’s
+            a
+            descending trail all the way. This is an evergreen Sahyadri forest, covered in mist and dreamy forest
+            landscape
+            in the Tamhini Ghats.
+        </div>
+        <div class="container">
+            <img class="mySlides1" src="4.jpg" style="width:100%">
+            <img class="mySlides1" src="5.jpg" style="width:100%">
+            <img class="mySlides1" src="6.jpg" style="width:100%">
+            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                style="width:100%">
+                <div class="w3-left w3-hover-text-khaki" style="cursor: pointer;" onclick="plusDivs(-1,0)">&#10094;
+                </div>
+                <div class="w3-right w3-hover-text-khaki" style="cursor: pointer;" onclick="plusDivs(1,0)">&#10095;
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="p2">
+        <div class="container" style="margin-left: 15vw;">
+            <img class="mySlides2" src="10.jpg" style="width:100%">
+            <img class="mySlides2" src="11.jpg" style="width:100%">
+            <img class="mySlides2" src="12.jpg" style="width:100%">
+            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                style="width:100%">
+                <div class="w3-left w3-hover-text-khaki" style="cursor: pointer;" onclick="plusDivs(-1,1)">&#10094;
+                </div>
+                <div class="w3-right w3-hover-text-khaki" style="cursor: pointer;" onclick="plusDivs(1,1)">&#10095;
+                </div>
+            </div>
+        </div>
+        <div class="kalsubai animate" id="kalsubai">
+            <h3 class="heading1 font">Kalsubai</h3>
+            Kalsubai Peak Trek with the height of 1646 meters or 5400 Feet is famous as the highest peaks
+            in Maharashtra. Kalsubai Mountain lies in the Sahyadri mountain range falling under Kalsubai
+            Harishchandragad Wildlife Sanctuary. Kalsubai Height being the highest peak, it commands a beautiful view.
+            Since Bhandardara Dam and Kalsubai Peak is extremely famous, enough effort has been made to make this trek
+            easy. There are steel railings, chains, and ladders at places where it is difficult to climb.
+        </div>
+
+    </div>
+    <div id="p3">
+        <div class="yelagiri animate" id="yelagiri">
+            <h3 class="heading1 font">Yelagiri</h3>
+            Yelagiri is a hill station in Vellore district of Tamil Nadu, India, situated off the
+            Vaniyambadi-Tirupattur road.Located at an altitude of 1,110.6 metres above Mean Sea Level and spread
+            across 30 km2, the Yelagiri village is surrounded by orchards, rose-gardens, and green valleys.Yelagiri
+            is one of the famous places for trekkers in India.
+        </div>
+        <div class="container">
+            <img class="mySlides3" src="13.jpg" style="width:100%">
+            <img class="mySlides3" src="15.jpg" style="width:100%">
+            <img class="mySlides3" src="16.jpg" style="width:100%">
+            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                style="width:100%">
+                <div class="w3-left w3-hover-text-khaki" style="cursor: pointer;" onclick="plusDivs(-1,2)">&#10094;
+                </div>
+                <div class="w3-right w3-hover-text-khaki" style="cursor: pointer;" onclick="plusDivs(1,2)">&#10095;
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        var slideIndex = [1, 1, 1];
+        var slideId = ["mySlides1", "mySlides2", "mySlides3"];
+        var dots = document.getElementsByClassName("demo");
+        showDivs(1, 0);
+        showDivs(1, 1);
+        showDivs(1, 2);
+        function myfunction() {
+            var y = document.documentElement.scrollTop;
+            if (y > 200) {
+                document.getElementById("andharban").classList.add("fadeInRight");
+            }
+            if (y > 800) {
+                document.getElementById("kalsubai").classList.add("fadeInRight");
+            }
+            if (y > 1300) {
+                document.getElementById("yelagiri").classList.add("fadeInRight");
+            }
+        }
+        function plusDivs(n, no) {
+            showDivs(slideIndex[no] += n, no);
+        }
+        function showDivs(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) { slideIndex[no] = 1 }
+            if (n < 1) { slideIndex[no] = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "block";
+        }
+    </script>
+
+
+    <div class="footer" style="position: relative;">
+        <div id="inline-block2">
+            <h3>Follow Me On<br></h3>
+            <i style="font-size: 250%;cursor: pointer;" class="fa fa-facebook"
+                onclick="window.open('','_new').location.href='https://www.facebook.com/nitinvakadari/';"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i style="font-size: 250%;cursor: pointer;" class="fa fa-instagram"
+                onclick="window.open('','_new').location.href='https://www.instagram.com/nitinvakadari/';"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+            <i style="font-size: 250%;cursor: pointer;" class="fa fa-twitter"
+                onclick="window.open('','_new').location.href='https://twitter.com/@nitinvakadari';"></i>
+        </div>
+
+
+        <div id="inline-block3">
+            <h3>Give Me Your Feedback</h3>
+            <!--<input type="text" id="feedback" />-->
+            <form method="post" action="feedback.php">
+                <input type="text" name="message" id="feedback" /><input id="feedbacksubmit" type="submit">
+            </form>
+        </div>
+    </div>
+    <div style="background-color: white;color: black;position: relative;text-align: center;font-size: 12px;">
+        Website Developed by Nitin Vankadari | nit.vankadari2000@gmail.com
+    </div>
+</body>
+
+</html>
